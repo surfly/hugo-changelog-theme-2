@@ -25,9 +25,16 @@ main {
     list-style-type: none;
 }
 
+/* Remove extra space between experimental changes from different files */
 .content-experimantal ul {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/* Links to the Surfly translation portal */
+.content-released ul.horizontal>li {
+    display: inline;
+    margin-right: 0.5rem;
 }
 
 .tag {
