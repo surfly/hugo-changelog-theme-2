@@ -1,0 +1,22 @@
+<br />
+<div class="tickets">
+    {{ with .Get "zendesk" }}
+    <a class="zendesk-link" href="https://surflysupport.zendesk.com/agent/tickets/{{ . }}"><img width=15 height=13 src="{{ (resources.Get "zendesk.svg").RelPermalink }}" alt="zendesk logo" /></a>
+    <a class="zenhub-link" href="https://surflysupport.zendesk.com/agent/tickets/{{ . }}">#{{ . }}</a>
+    {{ end }}
+
+    {{ with .Get "github" }}
+    <a class="github-link dev-only" href="https://github.com/surfly/it/pull/{{ . }}" hidden="hidden"><img width=16 height=13 src="{{ (resources.Get "octoface.svg").RelPermalink }}" alt="github alternate logo" /></a>
+    <a class="github-link dev-only" href="https://github.com/surfly/it/pull/{{ . }}" hidden="hidden">#{{ . }}</a>
+    {{ end }}
+
+    {{ with .Get "github-cobro" }}
+    <a class="github-link dev-only" href="https://github.com/surfly/cobro/pull/{{ . }}" hidden="hidden"><img width=16 height=13 src="{{ (resources.Get "octoface.svg").RelPermalink }}" alt="github alternate logo" /></a>
+    <a class="github-link dev-only" href="https://github.com/surfly/cobro/pull/{{ . }}" hidden="hidden">cobro#{{ . }}</a>
+    {{ end }}
+
+    {{ with .Get "github-milestone" }}
+    <a class="github-link dev-only" href="https://github.com/surfly/it/milestone/{{ . }}" hidden="hidden"><img width=16 height=13 src="{{ (resources.Get "octoface.svg").RelPermalink }}" alt="github alternate logo" /></a>
+    <a class="github-link dev-only" href="https://github.com/surfly/it/milestone/{{ . }}" hidden="hidden">milestone#{{ . }}</a>
+    {{ end }}
+</div>
