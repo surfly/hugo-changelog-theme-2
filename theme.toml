@@ -1,0 +1,12 @@
+name = 'Hugo Changelog Theme 2'
+license = 'MIT'
+licenselink = 'https://github.com/surfly/hugo-changelog-theme-2/LICENSE'
+description = 'Theme description'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/surfly/hugo-changelog-theme-2'
+
+# If the theme has a single author
+[author]
+name = 'Yauhen Shulitski'
+homepage = 'https://yauhen.cc/'
