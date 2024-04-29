@@ -2,23 +2,25 @@
   {{ $paginator := .Paginate ( where .Site.RegularPages.ByWeight.Reverse "Section" "released" ) }}
 
   {{ if eq $paginator.PageNumber 1 }}
-    <div class="content-experimantal">
+    <article class="content-experimantal">
       {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
       {{ if $experimentalPages }}
         {{ range $experimentalPages }}
           {{ .Content }}
         {{ end }}
       {{ end }}
-    </div>
+    </article>
   {{ end }}
 
-  {{ range $paginator.Pages }}
-    <h4>
-      {{ .Params.Version }} {{ .Title }}
-    </h4>
-    <small>{{ .Params.Subtitle }}</small>
-    {{ .Content }}
-  {{ end }}
+  <article class="content-released">
+    {{ range $paginator.Pages }}
+      <h2>
+        {{ .Params.Version }} {{ .Title }}
+      </h2>
+      <small>{{ .Params.Subtitle }}</small>
+      {{ .Content }}
+    {{ end }}
+  </article>
 
   <nav>
     {{ partial "pagination.html" . }}
