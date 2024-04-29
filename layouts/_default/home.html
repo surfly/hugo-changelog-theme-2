@@ -2,7 +2,7 @@
   {{ $paginator := .Paginate ( where .Site.RegularPages.ByWeight.Reverse "Section" "released" ) }}
 
   {{ if eq $paginator.PageNumber 1 }}
-    <article class="content-experimantal">
+    <article class="content content-experimantal">
       <h2>
         Upcoming changes
       </h2>
@@ -15,7 +15,7 @@
     </article>
   {{ end }}
 
-  <article class="content-released">
+  <article class="content content-released">
     {{ range $paginator.Pages }}
       <h2>
         {{ .Params.Version }} {{ .Title }}
@@ -28,5 +28,4 @@
   <nav>
     {{ partial "pagination.html" . }}
   </nav>
-
 {{ end }}

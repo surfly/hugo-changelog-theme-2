@@ -1,4 +1,58 @@
-.content-experimantal>ul {
+:root {
+    --color-tag-added: #2ecc71;
+    --color-tag-changed: #3498db;
+    --color-tag-deprecated: #9b59b6;
+    --color-tag-fixed: #f1c40f;
+    --color-tag-performance: #e67e22;
+    --color-tag-removed: #e74c3c;
+    --color-tag-security: #c0392b;
+    --color-tag-text: #ffffff;
+}
+
+
+.content li {
+    list-style-type: none;
+}
+
+.content-experimantal ul {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.tag {
+    border-radius: 0.5rem;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.tag-added {
+    background-color: var(--color-tag-added);
+    color: var(--color-tag-text);
+}
+
+.tag-changed {
+    background-color: var(--color-tag-changed);
+    color: var(--color-tag-text);
+}
+
+.tag-deprecated {
+    background-color: var(--color-tag-deprecated);
+    color: var(--color-tag-text);
+}
+
+.tag-fixed {
+    background-color: var(--color-tag-fixed);
+    color: var(--color-tag-text);
+}
+
+.tag-performance {
+    background-color: var(--color-tag-performance);
+    color: var(--color-tag-text);
+}
+
+.tag-removed {
+    background-color: var(--color-tag-removed);
+    color: var(--color-tag-text);
 }
