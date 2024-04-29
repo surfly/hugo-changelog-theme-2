@@ -3,6 +3,9 @@
 
   {{ if eq $paginator.PageNumber 1 }}
     <article class="content-experimantal">
+      <h2>
+        Upcoming changes
+      </h2>
       {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
       {{ if $experimentalPages }}
         {{ range $experimentalPages }}
