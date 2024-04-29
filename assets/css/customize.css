@@ -9,6 +9,17 @@
     --color-tag-text: #ffffff;
 }
 
+nav {
+    margin: 1.5rem 0;
+}
+
+footer {
+    padding-top: 0;
+}
+
+main {
+    padding-bottom: 0;
+}
 
 .content li {
     list-style-type: none;
