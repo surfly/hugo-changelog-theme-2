@@ -6,7 +6,7 @@
       <h2>
         Upcoming changes
       </h2>
-      {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
+      {{ $experimentalPages := where .Site.RegularPages.ByDate.Reverse "Section" "experimental" }}
       {{ if $experimentalPages }}
         {{ range $experimentalPages }}
           {{ .Content }}
