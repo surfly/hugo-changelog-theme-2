@@ -37,6 +37,10 @@ main {
     margin-right: 0.5rem;
 }
 
+.content-released h2 {
+    margin-bottom: 0;
+}
+
 .tag {
     border-radius: 0.5rem;
     display: inline-block;
@@ -72,5 +76,11 @@ main {
 
 .tag-removed {
     background-color: var(--color-tag-removed);
+    color: var(--color-tag-text);
+}
+
+
+.tag-security {
+    background-color: var(--color-tag-security);
     color: var(--color-tag-text);
 }
