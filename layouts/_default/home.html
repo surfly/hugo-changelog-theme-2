@@ -1,7 +1,21 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+  {{ $paginator := .Paginate ( where .Site.RegularPages.ByWeight.Reverse "Section" "released" ) }}
+
+  {{ if eq $paginator.PageNumber 1 }}
+    {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
+    {{ if $experimentalPages }}
+      {{ range $experimentalPages }}
+        {{ .Content }}
+      {{ end }}
+    {{ end }}
   {{ end }}
+
+  {{ range $paginator.Pages }}
+    <h4>
+      {{ .Params.Version }} {{ .Title }}
+    </h4>
+    <small>{{ .Params.Subtitle }}</small>
+    {{ .Content }}
+  {{ end }}
+
 {{ end }}
