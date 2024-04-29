@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="13.000001"
+   width="14.980767"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 14.980767 13.000001"
+   xml:space="preserve"><metadata
+   id="metadata3793"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>golion-z-sourcefile-black</dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs3791" />
+<title
+   id="title3778">golion-z-sourcefile-black</title>
+<polygon
+   points="112.3,196.7 18.8,196.7 112.3,83.8 "
+   id="polygon3780"
+   transform="matrix(0.07401565,0,0,0.08474576,-1.3914942,-3.66949)" />
+<path
+   d="m 6.920463,0 c 0,2.18644 -1.546927,3.95762 -3.4565307,3.95762 C 1.5543286,3.95762 0,2.18644 0,0 Z"
+   id="path3782"
+   style="stroke-width:0.07919919" />
+<path
+   d="m 8.060304,13 c 0,-2.18644 1.546927,-3.95763 3.456531,-3.95763 1.909603,0 3.45653,1.77119 3.45653,3.95763 z"
+   id="path3784"
+   style="stroke-width:0.07919919" />
+<polygon
+   points="127.7,43.3 221.2,43.3 127.7,156.2 "
+   id="polygon3786"
+   transform="matrix(0.07401565,0,0,0.08474576,-1.3914942,-3.66949)" />
+</svg>
