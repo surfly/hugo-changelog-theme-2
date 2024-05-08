@@ -3,9 +3,9 @@
 
   {{ if eq $paginator.PageNumber 1 }}
     <article class="content content-experimantal">
-      <h2>
+      <h1>
         Upcoming changes
-      </h2>
+      </h1>
       {{ $experimentalPages := where .Site.RegularPages.ByDate.Reverse "Section" "experimental" }}
       {{ if $experimentalPages }}
         {{ range $experimentalPages }}
@@ -17,9 +17,9 @@
 
   <article class="content content-released">
     {{ range $paginator.Pages }}
-      <h2>
+      <h1>
         {{ .Params.Version }} {{ .Title }}
-      </h2>
+      </h1>
       <small>{{ .Params.Subtitle }}</small>
       {{ .Content }}
     {{ end }}
