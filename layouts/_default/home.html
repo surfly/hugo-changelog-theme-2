@@ -7,8 +7,15 @@
         Upcoming changes
       </h1>
       {{ $experimentalPages := where .Site.RegularPages.ByWeight "Section" "experimental" }}
-      {{ if $experimentalPages }}
-        {{ range $experimentalPages }}
+      {{ $releaseNotesPages := where $experimentalPages "Params.contentKind" "eq" "release-note" }}
+      {{ $upcomingChangesPages := where $experimentalPages "Params.contentKind" "ne" "release-note" }}
+      {{ if $releaseNotesPages }}
+        {{ range $releaseNotesPages }}
+          {{ .Content }}
+        {{ end }}
+      {{ end }}
+      {{ if $upcomingChangesPages }}
+        {{ range $upcomingChangesPages }}
           {{ .Content }}
         {{ end }}
       {{ end }}

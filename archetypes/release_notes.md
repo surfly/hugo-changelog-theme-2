@@ -1,7 +1,8 @@
 ---
 title:
 date: {{ .Date }}
-weight: 10
+weight:
 version:
 draft: false
+contentKind: release-note
 ---

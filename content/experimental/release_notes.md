@@ -1,10 +1,9 @@
 ---
 title:
 date: 2024-04-26T11:34:01Z
-weight: 10
 version:
 draft: false
-hidden: false  # Change it to `true` to have a dev change
+contentKind: release-note
 ---
 
 This update brings exciting new features and improvements to enhance your experience! We've introduced [Name of new feature], allowing you to [brief description of the benefit to users]. Additionally, we've made some refinements to existing features. For instance, [Feature 1] now boasts improved [what was improved], while [Feature 2] gains the functionality of [new functionality].
