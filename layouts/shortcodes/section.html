@@ -1,6 +1,13 @@
-<section>
-  <h2>{{ index .Params 0 }}</h2>
+{{ $name := index .Params 0 | lower }}
+{{ $icon := printf "%s.svg" $name }}
+<section class="grid-container">
+  <div class="inline">
+    <img width=24 height=24 src="{{ (resources.Get $icon).RelPermalink }}" alt="added features icon" />
+    <h4 style="margin: 0; text-transform: capitalize;">{{ $name }}</h4>
+  </div>
+  </div>
   <div>
-    {{ .Inner | markdownify }}
+    {{ .Inner }}
   </div>
 </section>
+<hr>
