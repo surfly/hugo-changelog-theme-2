@@ -1,7 +1,7 @@
 ---
 title:
 date: {{ .Date }}
-weight:
+weight: 20
 version:
 draft: false
 hidden: false  # Change it to `true` to have a dev change
