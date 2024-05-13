@@ -5,17 +5,17 @@
     {{ end }}
 
     {{ with .Get "github" }}
-    <a class="github-link dev-only" href="https://github.com/surfly/it/pull/{{ . }}" hidden="hidden"><img width=16 height=13 src="{{ (resources.Get "octoface.svg").RelPermalink }}" alt="github alternate logo" /></a>
-    <a class="github-link dev-only" href="https://github.com/surfly/it/pull/{{ . }}" hidden="hidden">#{{ . }}</a>
+    <a class="github-link dev-only" href="https://github.com/surfly/it/pull/{{ . }}"><img width=16 height=13 src="{{ (resources.Get "octoface.svg").RelPermalink }}" alt="github alternate logo" /></a>
+    <a class="github-link dev-only" href="https://github.com/surfly/it/pull/{{ . }}">#{{ . }}</a>
     {{ end }}
 
     {{ with .Get "github-cobro" }}
-    <a class="github-link dev-only" href="https://github.com/surfly/cobro/pull/{{ . }}" hidden="hidden"><img width=16 height=13 src="{{ (resources.Get "octoface.svg").RelPermalink }}" alt="github alternate logo" /></a>
-    <a class="github-link dev-only" href="https://github.com/surfly/cobro/pull/{{ . }}" hidden="hidden">cobro#{{ . }}</a>
+    <a class="github-link dev-only" href="https://github.com/surfly/cobro/pull/{{ . }}"><img width=16 height=13 src="{{ (resources.Get "octoface.svg").RelPermalink }}" alt="github alternate logo" /></a>
+    <a class="github-link dev-only" href="https://github.com/surfly/cobro/pull/{{ . }}">cobro#{{ . }}</a>
     {{ end }}
 
     {{ with .Get "github-milestone" }}
-    <a class="github-link dev-only" href="https://github.com/surfly/it/milestone/{{ . }}" hidden="hidden"><img width=16 height=13 src="{{ (resources.Get "octoface.svg").RelPermalink }}" alt="github alternate logo" /></a>
-    <a class="github-link dev-only" href="https://github.com/surfly/it/milestone/{{ . }}" hidden="hidden">milestone#{{ . }}</a>
+    <a class="github-link dev-only" href="https://github.com/surfly/it/milestone/{{ . }}"><img width=16 height=13 src="{{ (resources.Get "octoface.svg").RelPermalink }}" alt="github alternate logo" /></a>
+    <a class="github-link dev-only" href="https://github.com/surfly/it/milestone/{{ . }}">milestone#{{ . }}</a>
     {{ end }}
 </div>
