@@ -1,4 +1,4 @@
-<span class="tickets">
+<span class="tickets" style="padding-left: 5px;">
     {{ with .Get "zendesk" }}
     <a class="zendesk-link" href="https://surflysupport.zendesk.com/agent/tickets/{{ . }}"><img width=15 height=13 src="{{ (resources.Get "zendesk.svg").RelPermalink }}" alt="zendesk logo" /></a>
     <a class="zenhub-link" href="https://surflysupport.zendesk.com/agent/tickets/{{ . }}">#{{ . }}</a>
