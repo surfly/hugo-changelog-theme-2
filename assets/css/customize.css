@@ -6,6 +6,7 @@
     --color-tag-performance: #e67e22;
     --color-tag-removed: #e74c3c;
     --color-tag-security: #c0392b;
+    --color-tag-internal: #34495e;
     --color-tag-text: #ffffff;
 }
 
@@ -29,6 +30,7 @@ main {
 .content-experimantal ul {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 /* Links to the Surfly translation portal */
@@ -82,5 +84,10 @@ main {
 
 .tag-security {
     background-color: var(--color-tag-security);
+    color: var(--color-tag-text);
+}
+
+.tag-internal {
+    background-color: var(--color-tag-internal);
     color: var(--color-tag-text);
 }
